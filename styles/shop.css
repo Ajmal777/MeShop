@@ -1,0 +1,160 @@
+main{
+    display: flex;
+    font-weight: 400;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    background-color: black;
+    height: auto;
+    color: white;
+}
+
+h1{
+    color: white;
+    margin: 0;
+    font-weight: 400;
+}
+
+.section{
+    border-top: 1px solid white;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input[type="checkbox"]{
+    background-color: transparent;
+}
+.rating > .label{
+    display: flex;
+    justify-content: space-between;
+}
+
+#rating{
+    appearance: none;
+    height: 2px;
+}
+
+#filter{
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+}
+
+/* MAIN CONTENT */
+
+header,.search-bar, .section-buttons{
+    display: flex;
+}
+
+.container{
+    padding: 20px;
+    width: calc(85% - 40px);
+}
+
+header{
+    flex-direction: column;
+    gap: 20px;
+}
+
+.search-bar{
+    border: 1px solid black;
+    align-items: center;
+    padding: 5px 10px;
+    gap: 10px;
+}
+
+.search-bar > input{
+    flex-grow: 1;
+    font-size: 16px;
+    border: none;
+}
+.search-bar > input:focus{
+    outline: none;
+}
+
+header > .section-buttons{
+    justify-content: space-between;
+}
+
+.section-buttons button{
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 10px;
+    width: 15%;
+}
+
+.section-buttons button:active{
+    background-color: black;
+    color: white;
+}
+button:hover{
+    cursor: pointer;
+}
+
+.item-list{
+    display: flex;
+    gap: 15px;
+    overflow: auto;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 200px;
+    width: 20%;
+    border: 1px solid black;
+}
+.item-img{
+    flex-grow: 1;
+}
+.item img{
+    width: 100%;
+    height: auto;
+}
+
+.details, .details > .top{
+    display: flex;
+}
+
+.details{
+    padding: 10px;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.details > .top{
+    justify-content: space-between;
+}
+
+.details > .colors, .color-list,
+.details > .rating, .rating-stars{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+.color-list > .color{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+}
+
+.rating-stars > .star{
+    height: 20px;
+    width: 20px;
+}
+
+.addBtn{
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    border: none;
+    color: white;
+    font-size: 18px;
+}

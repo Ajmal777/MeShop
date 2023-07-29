@@ -1,0 +1,30 @@
+.home-main{
+    padding: 3rem;
+}
+
+h1{
+    font-weight: 400;
+    font-size: 64px;
+    margin-bottom: 2rem;
+}
+
+.desc{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#login-btn, #signup-btn{
+    border: none;
+    padding: 10px 40px;
+    cursor: pointer;
+}
+
+#login-btn{
+    background-color: black;
+    color: white;
+}
+#signup-btn{
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+}
