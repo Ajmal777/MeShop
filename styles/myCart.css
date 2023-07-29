@@ -13,6 +13,8 @@ button:hover{
 .item{
     border: 1px solid black;
     max-width: 32%;
+    display: flex;
+    flex-direction: column;
 }
 
 .details{
@@ -22,7 +24,9 @@ button:hover{
     display: flex;
     justify-content: space-evenly;
 }
-
+.item-img{
+    flex-grow: 1;
+}
 .item-img > img{
     width: 100%;
     height: auto;
@@ -41,21 +45,31 @@ button:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     gap: 15px;
-    min-width: 25%;
+    width: 25%;
+    height: fit-content;
 }
 .wrapper{
     flex-grow: 1;
     width: 100%;
 }
 .checkout-list{
-    padding: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.checkout-item{
+    padding: 10px;
+    background-color: #80808038;
 }
 .checkout-item, .cost{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.item-title{
+    width: 60%;
 }
 .cost-wrapper{
     width: 100%;
