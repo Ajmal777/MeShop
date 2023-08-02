@@ -23,3 +23,10 @@ nav{
     text-decoration: none;
     color: rgba(255, 255, 255, 0.700);
 }
+.links a:hover{
+    cursor: pointer;
+}
+.brand > a{
+    text-decoration: none;
+    color: white;
+}

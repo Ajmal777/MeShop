@@ -16,6 +16,7 @@ form.addEventListener('submit', (event)=>{
         if(obj.email === userEmail){
             if(obj.password === pass){
                 alert('Successfully logged in');
+                sessionStorage.setItem('loggedInUser', generateToken());
                 location.href = './shop.html';
             }
             else{
@@ -25,3 +26,12 @@ form.addEventListener('submit', (event)=>{
         }
     }
 })
+
+function generateToken(){
+    let token = '';
+    for(let i=0; i<12; i++){
+        token += Math.floor(Math.random() * 10);
+    }
+    console.log(token);
+    return token;
+}

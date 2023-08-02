@@ -11,18 +11,22 @@
 
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/navbar.css">
+
     <script defer src="scripts/script.js"></script>
+    <script defer src="scripts/navbar.js"></script>
 </head>
 <body>
     <nav>
         <div class="navbar">
-            <div class="brand">MeShop.</div>
+            <div class="brand">
+                <a href="index.html">MeShop.</a>
+            </div>
             <div class="links">
-                <div class="home"><a href="shop.html">Home</a></div>
-                <div class="login"><a href="login.html">Login</a></div>
-                <div class="signup"><a href="signup.html">Sign up</a></div>
-                <div class="my-cart"><a href="myCart.html">My Cart</a></div>
-                <div class="profile"><a href="profile.html">Profile</a></div>
+                <div id="home" onclick="home()"><a>Home</a></div>
+                <div id="login" ><a href="login.html">Login</a></div>
+                <div id="signup"><a href="signup.html">Sign up</a></div>
+                <div id="my-cart" onclick="myCart()"><a>My Cart</a></div>
+                <div id="profile" onclick="profile()"><a>Profile</a></div>
             </div>
         </div>
     </nav>
@@ -35,7 +39,6 @@
 
         <button id="login-btn" onclick="login()" type="button">Login</button>
         <button id="signup-btn" onclick="signup()" type="button">Signup</button>
-
     </main>
 </body>
 </html>

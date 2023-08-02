@@ -28,3 +28,7 @@ h1{
     border: 1px solid black;
     color: black;
 }
+
+.background-img{
+    position: absolute;
+}

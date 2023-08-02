@@ -11,10 +11,12 @@ button:hover{
     gap: 10px;
 }
 .item{
-    border: 1px solid black;
     max-width: 32%;
     display: flex;
     flex-direction: column;
+    
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px grey;
 }
 
 .details{
@@ -23,9 +25,13 @@ button:hover{
 .container{
     display: flex;
     justify-content: space-evenly;
+    padding: 20px 0px;
 }
 .item-img{
     flex-grow: 1;
+    display: flex;
+    align-items: center;
+    padding: 20px;
 }
 .item-img > img{
     width: 100%;
@@ -37,6 +43,8 @@ button:hover{
     color: white;
     width: 100%;
     padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .checkout{

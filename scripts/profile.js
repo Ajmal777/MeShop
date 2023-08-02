@@ -13,6 +13,8 @@ const logoutBtn = doc.getElementById('logout');
 
 const userData = JSON.parse(sessionStorage.getItem('loggedInUser'));
 
+
+
 fname.value = userData.fname;
 lname.value = userData.lname;
 
