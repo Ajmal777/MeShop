@@ -23,3 +23,13 @@ input{
     color: white;
     border: none;
 }
+
+#login-btn:hover{
+    cursor: pointer;
+}
+
+@media (width <= 500px){
+    input{
+        max-width: none;
+    }
+}

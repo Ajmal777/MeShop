@@ -7,7 +7,7 @@ button:hover{
 .items-list{
     display: flex;
     flex-wrap: wrap;
-    max-width: 50%;
+    max-width: 60%;
     gap: 10px;
 }
 .item{
@@ -17,10 +17,22 @@ button:hover{
     
     border-radius: 10px;
     box-shadow: 0px 0px 10px grey;
+
+    transition: max-width .3s ease;
 }
 
 .details{
     padding: 10px;
+    font-size: 14px;
+}
+.details > .title{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
 }
 .container{
     display: flex;
@@ -77,7 +89,13 @@ button:hover{
     align-items: center;
 }
 .item-title{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
     width: 60%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
 }
 .cost-wrapper{
     width: 100%;
@@ -97,9 +115,69 @@ button:hover{
     width: 100%;
     background-color: white;
     color: black;
-    font-size: 24px;
+    font-size: 20px;
     padding: 10px;
     margin-bottom: 20px;
 }
 
+#checkout-btn:hover{
+    cursor: pointer;
+}
 
+#checkout-btn:active{
+    background-color: black;
+    color: white;
+}
+
+@media (width <= 1000px){
+    .item{
+        max-width: 30%;
+    }
+    .item-img{
+        padding: 10px;
+    }
+}
+
+@media (width <= 750px){
+    .container{
+        justify-content: space-between;
+        padding: 20px;
+        gap: 20px;
+    }
+    .item{
+        max-width: 48%;
+    }
+    .checkout{
+        width: auto;
+    }
+}
+
+@media (width <= 550px) {
+    .item{
+        max-width: 100%;
+    }
+}
+
+@media (width <= 450px){
+    .container{
+        flex-direction: column;
+    }
+    .items-list{
+        max-width: 100%;
+    }
+    .item{
+        max-width: 31%;
+    }
+}
+
+@media (width <= 330px){
+    .item{
+        max-width: 45%;
+    }
+}
+
+@media (width <= 250px){
+    .item{
+        max-width: 100%;
+    }
+}

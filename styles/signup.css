@@ -26,3 +26,9 @@ main{
     color: white;
     margin-top: 15px;
 }
+
+@media (width <= 500px){
+    .form > input{
+        max-width: none;
+    }
+}

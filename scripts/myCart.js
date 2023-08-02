@@ -30,10 +30,10 @@ function createData(item){
         </div>
         <div class="details">
             <div class="title">
-                Title: ${item.title}
+                <b>Title:</b> ${item.title}
             </div>
             <div class="price">
-                Price: $${item.price}
+                <b>Price:</b> $${item.price}
             </div>
         </div>
         <button type="button" onclick="removeItem(${item.id}, ${item.price})" id="remove-item">Remove From Cart</button>

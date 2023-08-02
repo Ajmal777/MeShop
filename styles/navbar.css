@@ -30,3 +30,18 @@ nav{
     text-decoration: none;
     color: white;
 }
+
+@media (width <= 500px){
+    nav{
+        max-height: none;
+    }
+    .navbar{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .links{
+        flex-wrap: wrap;
+        justify-content: start;
+        gap: 10px;
+    }
+}
