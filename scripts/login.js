@@ -24,6 +24,7 @@ form.addEventListener('submit', (event)=>{
                 sessionStorage.setItem('loggedInUser', JSON.stringify(obj));
                 sessionStorage.setItem('token', generateToken());
                 location.href = './shop.html';
+                return;
             }
             else{
                 alert('Incorrect email or password');
