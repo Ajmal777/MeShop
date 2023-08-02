@@ -14,8 +14,7 @@ form.addEventListener('submit', (event)=>{
     const users = JSON.parse(localStorage.getItem('users'));
     console.log(users);
     if(users === null){
-        alert("Email doesn't exists, Signup to continue!!");
-        location.href = './signup.html';
+        alert("Incorrect email or password");
         return;
     }
     for(let obj of users){
@@ -32,6 +31,7 @@ form.addEventListener('submit', (event)=>{
             }
         }
     }
+    alert("Incorrect email or password");
 })
 
 function generateToken(){
