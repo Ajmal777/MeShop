@@ -54,5 +54,5 @@ function saveUser(data){
     sessionStorage.setItem('loggedInUser', JSON.stringify(data));
 
     alert('Successfully signed in');
-    location.href = './profile.html';
+    location.href = './shop.html';
 }
